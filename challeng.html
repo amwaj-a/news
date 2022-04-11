@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- animation css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Challng</title>
+<style>
+    :root{
+        --color:rgb(245, 190, 162);
+    }
+    body{
+        background: url('http://marble-bajco.com/wp-content/uploads/2017/01/%D8%B1%D8%AE%D8%A7%D9%85-%D9%83%D8%B1%D9%8A%D9%85-%D9%85%D8%A7%D8%B1%D9%81%D9%8A%D9%84.jpg') no-repeat ;
+        background-size: cover;
+    }
+    header h4{        display: inline-block;
+
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .line{
+        display: inline-block;
+        height: 30px;
+        width: 20px;
+        border-left: solid thin black ;
+    }
+    .all{
+        display: inline-block;
+
+    }
+     li:hover{ 
+        color: #000;
+    font-weight:bolder;
+        background-color: var(--color);
+    }
+
+
+    button:hover{
+        background: linear-gradient(to left, var(--color) 50%,darkgray  50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+}
+.submit:hover{
+  background-position: right;
+    }
+.lines {
+    
+  width: 15px;
+  height: 2.9px;
+  background-color: black;
+  /* margin: 6px 0; */
+}
+.a{  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+li{
+    margin-left: 10px;
+    display: inline-block;
+}
+ ul{  
+     display: inline-block;
+    color: gray;
+    font-size: large;
+    font-family:Century Gothic
+    /* 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+.li, header button{
+    color: #000;
+    font-weight:bolder;
+}
+.menu li{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+.li span{
+           background-color: var(--color);
+
+}
+.backgrund{
+	background-image: linear-gradient(
+		0,
+		var(--color) 50%,
+		transparent 50%
+	);    /* box-shadow: 0px 29px 0px rgb(245, 190, 162); ; */
+}
+
+.backgrund2{
+	background-image: linear-gradient(
+		0,
+		rgb(245, 245, 108) 50%,
+		transparent 50%
+	); 
+}
+
+header button{
+    float: right;
+    box-shadow: 3px 3px 0px black;
+    background-color: unset;
+}
+b{
+    font-size:50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+em{
+    
+}
+.human::after{
+    content: '  ///';
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bolder;
+    
+    color: var(--color);
+    /* width: 10px;
+    height: 20px; */
+}
+</style>
+<script src="jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+    <header class="m-5 container">
+      
+      <nav class="navbar navbar-expand-lg ">
+        <!-- <div class="container-fluid">  -->
+             <h4>Lo.News</h4>
+        <div class="line mx-5"> </div>
+        <div class="all mx-5" >
+  <div  class='lines'></div>
+<div class='a'></div>
+<div  class='lines'></div>
+
+        </div>
+             <ul class="navbar-nav -5 me-auto">
+          <li  class="nav-item mx-5">HOME</li>
+          <li  class="nav-item mx-5"> REVIEWS</li>
+          <li  class="nav-item mx-5 li"> DA<span>ILY
+              NE</span>WS</li>
+          <li  class="nav-item mx-5"> FEATUERS</li>
+
+
+      </ul>
+
+      <button class="px-4 py-3">CONTACT US</button>
+      <!-- </div>   -->
+      </nav>  
+ 
+
+    </header>
+<div class="row container mx-5">
+
+    <hr class=" my-5 col-4">
+
+    <b class="col-4 text-center ">TODAY <span class="backgrund">NEWS</span></b>
+    <hr class=" my-5 col-4">
+</div>
+<div class="row mx-4"> 
+     
+    <div class="col-2">
+        <i class="fa fa-search me-4" style="font-size:x-large; color: #000;"></i> SEARCH....
+    </div>
+<div class="col-9">
+   <ul class="menu row list-unstyled text-center">
+<li class="col-1" >ACADEMIC</li>
+<li class="li human col-3">    HUMAN & ENVIRONMENT  <br></li>
+<li class="col-1">SPORTS</li>
+<li class="col-1">POLITICAL</li>
+<li class="col-1">MUSIC</li>
+<li class="col-2">FINANCISAL MARKET</li>
+<li class="col-1">OTHER</li>
+</ul>    
+</div>
+ 
+</div>
+<br>
+<div class="row container-fluid mt-3 ">
+    <div  style="border-right:1px solid #000;height:500px"
+        class="pe-5 col-6">
+         <!-- START COL -->
+         <div class="row">
+                             <div class="col-6 ">
+                    <b class="mb-5" style="  font-size:35px; ">POPULAR NEWS</b>
+</div>
+<div class="col-6 ">
+    <hr class=" my-4 "></div>
+         </div>
+<div id="hide1">
+        <div class="row">
+                    <br><br>
+
+                    <div class="col-6 ms-2 mt-3" style="position: relative;">
+                    <div style="position: absolute;width: 95%; border: thin solid  black;z-index: -1;height: 99%;"> </div>
+                      <img class=" animate__animated animate__backInLeft mb-2 me-5" width="100%" style="z-index: -1" src="https://m.media-amazon.com/images/I/61vE3oeJ3tL._AC_SX679_.jpg" alt="">
+
+                   
+                     <br>
+             
+                </div>
+                 <div class="col-5 ">
+                        <br><br>
+                      <div  style=" border-bottom: solid thin gray; padding-bottom: 10px;">
+                          <b class="my-5 animate__animated animate__flipInX" style=" font-size:25px; ">
+                            <span style="border-left: var(--color) solid 6px; padding-left: 10px; ">
+                                  E</span>SKIMOS BEGAN TO
+                                <span class="backgrund2">
+                                    BULID HUT
+                                </span> </b>
+                      </div>  
+                      
+                    <div class="row mt-3">
+                        <img class="col-3 ms-2" width="20%" src="user1.jpg" alt="">  
+                        <div class="col-8 ">
+                            <strong class="" style="text-align:left">JESIKaj LoIJpoutr</strong>
+                           <br> <small style="font-weight: lighter;">News Author</small></div>
+                    </div>
+
+
+                  </div>
+       </div>
+
+<div class="row">
+   
+     <div class="mt-4 col-6">
+            <br>
+          <div  style=" border-bottom: solid thin gray; padding-bottom: 10px;">
+              <b class=" animate__animated animate__flipInX my-5" style=" font-size:25px; ">
+                <span style="border-left: var(--color) solid 6px; padding-left: 10px; ">
+                      T</span>HE <span class="backgrund2">
+                       OZONE LAYER
+                    </span> WAS REPAIRED</b>
+          </div>  
+          
+                    <div class="row mt-3">
+                        <img class="col-3 " width="20%" src="user2.jpg" alt="">  
+                        <div class="col-8 ">
+                            <strong class="" style="text-align:left">
+                                Edvardo Kiuewd</strong>
+                        <br> <small style="font-weight: lighter;">News Author</small></div>
+                    </div>
+
+
+      </div>   
+ 
+     
+      <div class="col-5 ms-2" style="position: relative;">
+        <!-- <b class="mb-4" style="  font-size:35px; ">POPULAR NEWS</b> -->
+        <br><br>
+        <div style="position: absolute;width: 113%; border: thin solid  black;
+        z-index: -1;height: 81%;"> </div>
+          <img class="mb-2 me-3 animate__animated animate__backInLeft" width="120%" src="image1.jpg" alt="">
+
+       
+         <br>
+ 
+    </div>
+</div>
+
+<div>
+
+    <div class="mb-5 me-4" style="display: inline-block; border:solid 2px black; text-align: center; width: 3vw;height: 5vh;box-shadow: 4px 4px black;">
+           <i class="fa fa-angle-left p-2" style="font-size:24px"></i>
+       
+       </div>
+   
+      
+   
+       <div id="right"  class="me-4" style="background-color: var(--color); text-align: center;width: 3vw;height: 5.5vh;display: inline-block;">
+           <i class="fa fa-angle-right p-2" style="font-size:24px"></i>
+       
+       </div>
+   <em class="me-4">................................................................................................................</em>
+       <strong>See All</strong>
+       
+     </div>
+</div>
+<!-- ------------- -->
+
+<div id="show1" style="display: none;">
+    <div class="row">
+                <br><br>
+
+                <div class="col-6 ms-2 mt-3" style="position: relative;">
+                <div style="position: absolute;width: 95%; border: thin solid  black;z-index: -1;height: 99%;"> </div>
+                  <img class=" animate__animated animate__backInLeft mb-2 me-5" width="100%" style="z-index: -1" src="https://c.ndtvimg.com/2022-02/8vq194t_air-india-bloomberg_120x90_24_February_22.jpg" alt="">
+
+               
+                 <br>
+         
+            </div>
+             <div class="col-5 ">
+                    <br><br>
+                  <div  style=" border-bottom: solid thin gray; padding-bottom: 10px;">
+                      <b class="my-5 animate__animated animate__flipInX" style=" font-size:25px; ">
+                        <span style="border-left: var(--color) solid 6px; padding-left: 10px; ">
+                              N</span>ew Planes For Air 
+                            <span class="backgrund2">
+                             India 
+                            </span> </b>
+                  </div>  
+                  
+                <div class="row mt-3">
+                    <img class="col-3 ms-2" width="20%" src="https://bsmedia.business-standard.com/_media/bs/img/article/2021-06/22/full/1624353658-73.jpg?im=Resize,width=640" alt="">  
+                    <div class="col-8 ">
+                        <strong class="" style="text-align:left">  Kiuewd Edvardo</strong>
+                       <br> <small style="font-weight: lighter;">News Author</small></div>
+                </div>
+
+
+              </div>
+   </div>
+
+<div class="row">
+
+ <div class="mt-4 col-6">
+        <br>
+      <div  style=" border-bottom: solid thin gray; padding-bottom: 10px;">
+          <b class=" animate__animated animate__flipInX my-5" style=" font-size:25px; ">
+            <span style="border-left: var(--color) solid 6px; padding-left: 10px; ">
+                  M</span> ayank Agarwal set to<span class="backgrund2">
+                     captain Punjab Kings
+                </span> </b>
+      </div>  
+      
+                <div class="row mt-3">
+                    <img class="col-3 " width="20%" src="data:image/jpeg;base64,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" alt="">  
+                    <div class="col-8 ">
+                        <strong class="" style="text-align:left">
+                            Edvardo Kiuewd</strong>
+                    <br> <small style="font-weight: lighter;">News Author</small></div>
+                </div>
+
+
+  </div>   
+
+ 
+  <div class="col-5 ms-2" style="position: relative;">
+    <!-- <b class="mb-4" style="  font-size:35px; ">POPULAR NEWS</b> -->
+    <br><br>
+    <div style="position: absolute;width: 113%; border: thin solid  black;
+    z-index: -1;height: 81%;"> </div>
+      <img class="mb-2 me-3 animate__animated animate__backInLeft" width="120%" src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-11/15/full/1573829182-918.jpg?im=Resize,width=640" alt="">
+
+   
+     <br>
+
+</div>
+</div>
+<div> 
+    
+    <div id="left" class="me-4" style="background-color: var(--color); text-align: center;width: 3vw;height: 5.5vh;display: inline-block;">
+           <i class="fa fa-angle-left p-2" style="font-size:24px"></i>
+       
+       </div>
+
+    <div  class="mb-5 me-4" style="display: inline-block; border:solid 2px black; text-align: center; width: 3vw;height: 5vh;box-shadow: 4px 4px black;">
+           <i class="fa fa-angle-right p-2" style="font-size:24px"></i>
+       
+       </div>
+   
+      
+   
+     
+   <em class="me-4">................................................................................................................</em>
+       <strong>See All</strong>
+       
+     </div>
+
+</div>
+
+<!-- ----------- -->
+  </div><!-- END COL -->
+
+  <!-- ------------------------------------------ -->
+  <div class="col-5 ms-4" >      <!-- START COL2 -->
+
+<div class="row">
+      <b  class="mb-4 col-4" style="  font-size:35px; ">HOT NEWS</b>
+        <hr class="mt-4 col-7"> 
+</div>
+
+      <div id="hid">
+        
+        <div class="row">
+                    <div class="col-9 ms-2" style=" position: relative;">
+
+            <div style="position: absolute;width: 78%; border: thin solid  black;z-index: -1;height: 93%;"> </div>
+            <img class="animate__animated animate__backInRight mb-2 me-5" width="80%" style="z-index: -1" src="https://www.ilpost.it/wp-content/uploads/2019/09/01_amazon.jpg?x58656" alt="">
+            <div style="position: absolute;width: 10%; border: thin solid  black;z-index: -1;height: 15%;right: 0px;top:30%"> </div>
+           
+           
+
+            <!-- <a style="color :black" href="A.html"> -->
+            <div id="up" style="background-color: var(--color); text-align: center;width: 3vw;height: 5vh;position: absolute;right: 0px;top:30%">
+                <i class="fa fa-angle-up" style="font-size:24px"></i>
+            
+            </div>
+         <!-- </a> -->
+
+
+            <br>
+              <div class="p-2" style="background-color:	rgb(245, 245, 108)  ; text-align: right;z-index: -2; width: 5.2vw;height: 5vh;position: absolute;right: 0px;top:50%">
+              <b style="font-size: 20px;">
+                  01
+              </b>  
+            </div>
+       
+          
+            <div style="border:solid 2px black; text-align: center; width: 3vw;height: 5vh;box-shadow: 4px 4px black;position: absolute;right: 0px;top:70%">
+                <i class="fa fa-angle-down" style="font-size:24px"></i>
+            
+            </div>
+          
+          
+            <br>
+    
+        </div>
+        
+        <div class="col-2">
+
+
+</div>
+        </div>
+   
+        <b class="my-5 animate__animated animate__flipInX" style=" font-size:25px; ">
+            AMAZON IN 
+                <span class="backgrund2">
+                   BLACKOUT
+                </span> </b>
+                
+                <p style='font-size: large;'class="animate__animated animate__flipInX mt-4">The Forests Of The Amazon Are Being Destroyed Every Day And 
+                    There Is No Support Institution And Many 
+                    Things Will Happen Soon....  
+                    <button id="hide"style="color: #000 ;background-color: unset;border: none;border-bottom: #000 2px solid;"><span class="a"></span><strong class="hide">More</strong></button></p>
+
+
+
+                    <div  class="row mt-3 hide">
+                        <img class="col-2" width="20%" src="user3.jpg" alt="">  
+                        <div class="col-8 ">
+                            <strong class="" style="text-align:left">
+                                MARTIN MOIUYTER</strong>
+                        <br> <small style="font-weight: lighter;">News Author</small></div>
+                    </div>
+
+
+                </div>
+                
+      <div id='show' style="display:none;">
+        
+        <div class="row">
+                    <div class="col-9 ms-2" style=" position: relative;">
+
+            <div style="position: absolute;width: 78%; border: thin solid  black;z-index: -1;height: 93%;"> </div>
+            <img class="animate__animated animate__backInRight mb-2 me-5" width="80%" style="z-index: -1" src="https://static.toiimg.com/thumb/msid-89799237,imgsize-189200,width-400,resizemode-4/89799237.jpg" alt="">
+            <div style="position: absolute;width: 10%; border: thin solid  black;z-index: -1;height: 15%;right: 0px;top:30%"> </div>
+
+            <div style=" text-align: center;width: 3vw;height: 5vh;position: absolute;right: 0px;top:30%">
+                <i class="fa fa-angle-up" style="font-size:24px"></i>
+            
+            </div>
+            <br>
+              <div class="p-2" style="background-color:	rgb(245, 245, 108)  ; text-align: right;z-index: -2; width: 5.2vw;height: 5vh;position: absolute;right: 0px;top:50%">
+              <b style="font-size: 20px;">
+                  02
+              </b>  
+            </div>
+            <!-- <a style="all:unset" href="challeng.html"> -->
+            <div id='down1'style="background-color: var(--color);border:solid 2px black; text-align: center; width: 3vw;height: 5vh;box-shadow: 4px 4px black;position: absolute;right: 0px;top:70%">
+                <i class="fa fa-angle-down" style="font-size:24px"></i>
+            
+            </div>
+            <!-- </a> -->
+          
+            <br>
+    
+        </div>
+        
+        <div class="col-2">
+
+
+</div>
+        </div>
+   
+        <b class="my-5" style=" font-size:25px; ">
+          
+                <span class="animate__animated animate__flipInX backgrund2">
+                   Russia
+
+                </span> </b>
+                
+                <p style='font-size: large;'class="animate__animated animate__flipInX mt-4">Russia has launched an all-out invasion of Ukraine by land, air and sea, in what is being seen as the biggest attack by one state against another in Europe since World War II.</p>
+   
+   
+                </div>
+            
+    </div>    <!-- END COL2 -->
+</div>
+<br>
+<br>
+<br>
+<br>
+<script>
+const s= document.getElementById('up');
+const down= document.getElementById('down1');
+
+const a= document.getElementById('hid');
+const show= document.getElementById('show');
+s.addEventListener('click',()=>{
+a.style.display='none'
+show.style.display=''
+})
+
+down.addEventListener('click',()=>{
+show.style.display='none'
+a.style.display=''
+})
+
+
+const hide1= document.getElementById('hide1');
+const left= document.getElementById('left');
+const r= document.getElementById('right');
+const show1= document.getElementById('show1');
+
+
+r.addEventListener('click',()=>{
+hide1.style.display='none'
+show1.style.display=''
+})
+
+left.addEventListener('click',()=>{
+show1.style.display='none'
+hide1.style.display=''
+})
+
+
+
+</script>
+</body>
+</html>
